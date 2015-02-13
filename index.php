@@ -11,7 +11,7 @@
 	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
 	<link rel="icon" href="img/" type="image/x-icon" />
 
-	<title>Bar à café</title>
+	<title>Minicaf'</title>
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	<script src="js/vendor/less-1.5.0.min.js"></script>
 	<script src="js/main.js"></script>
