@@ -11,12 +11,15 @@
 	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
 	<link rel="icon" href="img/" type="image/x-icon" />
 
-	<title></title>
+	<title>Bar à café</title>
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	<script src="js/vendor/less-1.5.0.min.js"></script>
 	<script src="js/main.js"></script>
 </head>
 <body>
 <?php include("menu.php"); ?>
+<?php include("accueil.php"); ?>
+<?php include("produits.php"); ?>
+<?php include("contact.php"); ?>
 </body>
 </html>
