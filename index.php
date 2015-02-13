@@ -20,9 +20,11 @@
 <body>
 <?php include("menu.php"); ?>
 <?php include("accueil.php"); ?>
+<?php include("nouveautes.php"); ?>
+<?php include("menus.php"); ?>
 <?php include("produits.php"); ?>
 <?php include("contact.php"); ?>
 <?php include("footer.php"); ?>
-<?php include("nouveautes.php"); ?>
+
 </body>
 </html>
