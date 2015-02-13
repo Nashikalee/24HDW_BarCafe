@@ -18,5 +18,6 @@
 </head>
 <body>
 <?php include("menu.php"); ?>
+<?php include("nouveautes.php"); ?>
 </body>
 </html>
