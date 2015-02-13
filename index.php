@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
-
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
@@ -23,5 +23,6 @@
 <?php include("produits.php"); ?>
 <?php include("contact.php"); ?>
 <?php include("footer.php"); ?>
+<?php include("nouveautes.php"); ?>
 </body>
 </html>
