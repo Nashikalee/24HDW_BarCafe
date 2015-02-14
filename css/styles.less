@@ -53,7 +53,7 @@ body{
 		ul{
 			margin-left: 50px;
 			img{ // Logo
-				width: 50px;
+				width: 120px;
 			}
 			li{
 				display: inline-block;
@@ -85,7 +85,7 @@ body{
 		} // End nav Menu
 	}
 	section{
-		margin-top: 10%;
+		margin-top:140px;
 		&#accueil{
 			article{
 				div{
@@ -93,12 +93,22 @@ body{
 						img{
 							width: 100%;
 						}
-						figcaption{
-							width: 50%;
-							color: @blanc;
+						>div{
+							background: @orange;
+							width: 34%;
 							position: absolute;
-							top: 2%; left: 40%;
+							margin: 0 auto;
+							top: 100px;
+							left: 36%;
+							height: 20%;
+
+						}
+						figcaption{
+							color: @blanc;
+
 							h3{
+								font-size: 200%;
+								color: #2a2a2a;
 							}
 							p{
 							}
@@ -110,8 +120,9 @@ body{
 	} // End section
 
 	div{
-		>div{
+		div{
 			>ul{
+				margin-top: 37%;
 				>div{
 					>li{
 						img{
@@ -224,4 +235,6 @@ body{
 .backPos(@left: 0, @top: 0){
 	background-position: @left @top;
 }
+
+
 

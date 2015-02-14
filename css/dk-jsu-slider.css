@@ -61,14 +61,15 @@
 
 .dk-jsu-slider-wrapper .navigation .prev,
 .dk-jsu-slider-wrapper .navigation .next {
-	left: 25%;
+	left: 10%;
+	margin-top: 130px;
 	font-size: 12px;
 	cursor: pointer;
 	z-index: 100;
 }
 
 .dk-jsu-slider-wrapper .navigation .next {
-	right: 25%;
+	right: 10%;
 	left: auto;
 }
 
