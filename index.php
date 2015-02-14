@@ -114,15 +114,7 @@
 		</div>
 	</div>
 
-	<section id="produits">
-		<h1>Produits</h1>
-		<article>
-			<div id="target-slider-produit">
-				<div><img src="img/cafe.jpg"></div>
-				<div><img src="img/"></div>
-			</div>
-		</article>
-	</section>
+	
 
 	<div id="contact">
 		<div class="container">
