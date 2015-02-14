@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+  Slider
+---------------------------------------------------------- */
+
+/* Core
+-------------------------- */
+
+.dk-jsu-slider {
+	z-index: 0;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+/* Wrapper */
+
+.dk-jsu-slider-wrapper {
+	z-index: 1;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+/* Slides */
+
+.dk-jsu-slide {
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+
+.dk-jsu-slider-wrapper .pagination,
+.dk-jsu-slider-wrapper .navigation * {
+	z-index: 3;
+	position: absolute;
+}
+
+/* Theme
+-------------------------- */
+
+.dk-jsu-slider-wrapper {
+	width: 100%;
+}
+
+.dk-jsu-slider {
+	overflow: hidden;
+}
+
+/* Navigation */
+
+.dk-jsu-slider-wrapper .navigation {
+	line-height: 16px;
+}
+
+.dk-jsu-slider-wrapper .navigation .prev,
+.dk-jsu-slider-wrapper .navigation .next {
+	left: 25%;
+	font-size: 12px;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.dk-jsu-slider-wrapper .navigation .next {
+	right: 25%;
+	left: auto;
+}
+
+/* Pagination */
+.dk-jsu-slider-wrapper .pagination {
+	left: 50%;
+	bottom: 10px;
+	font-size: 20px;
+	line-height: 10px;
+}
+
+.dk-jsu-slider-wrapper .pagination span {
+	display: inline-block;
+	margin-left: 3px;
+	vertical-align: middle;
+	cursor: pointer;
+	*display: inline;
+	*zoom: 1;
+}
+
+.dk-jsu-slider-wrapper .pagination .current,
+.dk-jsu-slider-wrapper .pagination span:hover {
+	color: #369;
+}
+
+/* Slide animation */
+
+.vanilla-slider .dk-jsu-slide {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+.vanilla-slider .dk-jsu-slider .active-slide {
+	visibility: visible;
+	opacity: 1;
+}
