@@ -76,10 +76,11 @@
 /* Pagination */
 
 .dk-jsu-slider-wrapper .pagination {
-	left: 50%;
-	bottom: 10px;
+	/*left: 50%;
+	bottom: -300px;
 	font-size: 20px;
-	line-height: 10px;
+	line-height: 10px;*/
+	display: none;
 }
 
 .dk-jsu-slider-wrapper .pagination span {

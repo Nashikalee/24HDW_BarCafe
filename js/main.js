@@ -21,6 +21,7 @@ function scroll(){
 			var page = $(this).attr('href'); // Page cible
 			var speed = 1000; // Durée de l'animation (en ms)
 			$('html, body').animate( { scrollTop: $(page).offset().top -120 }, speed ); // Go
+
 			return false;
 		});
 	});

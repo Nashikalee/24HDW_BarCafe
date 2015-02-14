@@ -21,7 +21,7 @@ if (!jQuery.fn.dkJSUSlider) {
             defaultSettings: {
                 autoSlide: true,
                 autoSlideForce: false,
-                autoSlideDuration: 7000,
+                autoSlideDuration: 3000,
                 bulletsType: 'default',
                 createNavigation: true,
                 createPagination: true,
