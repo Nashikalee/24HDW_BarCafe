@@ -8,14 +8,16 @@
 
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/dk-jsu-slider.css">
 	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
 	<link rel="icon" href="img/" type="image/x-icon" />
 
 	<title>Minicaf'</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	<script src="js/vendor/less-1.5.0.min.js"></script>
 	<script src="js/main.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/dk-jsu-slider.js"></script>
 </head>
 <body>
 <?php include("menu.php"); ?>
