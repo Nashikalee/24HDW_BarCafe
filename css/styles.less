@@ -23,12 +23,14 @@ body, ul, a, h1, h2, h3, h4, h5, h6{
 	transition: @type @duree @effet;
 }
 body{
+	margin-top: 70px;
 	nav{ // Menu
 		background: @beige;
 		width: 100%;
 		padding: 10px;
 		position: fixed;
 		top: 0; left: 0;
+		z-index: 99999;
 		text-align: center;
 		overflow: hidden;
 		ul{
@@ -56,11 +58,35 @@ body{
 		} // End ul
 	} // End nav Menu
 	section{
-		margin-top: 10%;
 		&#accueil{
+			img{
+				width: 100%;
+				height: 200px;
+			}
 		}
 	} // End section
 	footer{
 		background: #333;
 	} // End Footer
+}
+.prev, .next{
+	background: url(../img/sprite.png) no-repeat 0 0;
+	.sprite(0, 64px, 137px);
+	.backPos(0, -32px);
+}
+.next{
+	.backPos(-64px, -32px);
+}
+.pagination{
+
+}
+.sprite(@radius: 0, @largeur: 32px, @hauteur: 32px){
+	width: @largeur;
+	height: @hauteur;
+	border-radius: @radius;
+	text-indent: -100000px;
+	overflow: hidden;
+}
+.backPos(@left: 0, @top: 0){
+	background-position: @left @top;
 }
