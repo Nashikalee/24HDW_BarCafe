@@ -101,6 +101,30 @@
 		</div>
 	</div>
 
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<input type="text" placeholder="Nom">
+					<input type="text" placeholder="Adresse email">
+				</div>
+				<div class="col-md-12">
+					<textarea placeholder="Contactez nous"></textarea>
+					<input type="submit">
+				</div>
+			</div>
+			<div class="row">
+				<p>Martial Martin</p>
+				<p>06 12 34 56 78</p>
+				<p>minicaf@gmail.com</p>
+				<p>5, rue de Vaise 69000 LYON</p>
+			</div>
+		</div>
+	</div>
+	<div id="map">
+		<iframe width="100%" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=3+Rue+Chinard,+Vaise,+Lyon,+France&key=AIzaSyCDKcnD3IyParpo7iiBlPrFlXrTgFP6hQU"></iframe>
+	</div>
 
 </body>
 </html>
