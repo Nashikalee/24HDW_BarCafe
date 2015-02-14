@@ -32,6 +32,10 @@ function slide(){
 	jQuery(document).ready(function(){
 		jQuery('#target-slider').dkJSUSlider();
 	});
+
+	jQuery(document).ready(function(){
+		jQuery('#target-slider-produit').dkJSUSlider();
+	});
 }
 ////////////////////// End Slide //////////////////////
 ///// End Slide /////

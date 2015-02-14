@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Helvetica';
     src: url('../fonts/Helvetica.dfont');
 }
-
+@media screen{
 body{
 	font-family: helvetica, sans-serif;
 	margin-top: 70px;
@@ -111,6 +111,7 @@ body{
 						img{
 							display: block;
 							width: 100%;
+							max-height: 450px;
 						}
 						>div{
 							background: @orange;
@@ -120,7 +121,6 @@ body{
 							top: 100px;
 							left: 36%;
 							height: 20%;
-
 						}
 						figcaption{
 							color: @blanc;
@@ -141,7 +141,7 @@ body{
 	div{
 		div{
 			>ul{
-				margin-top: 37%;
+				margin-top: 40%;
 				>div{
 					>li{
 						img{
@@ -185,6 +185,17 @@ body{
 			}
 		}
 
+		&#produits{
+			article{
+				div{
+					div{
+						img{
+							width: 80%;
+						}
+					}
+				}
+			}
+		}
 		&#contact{
 			background: @bleu;
 			padding: 100px 0;
@@ -241,7 +252,7 @@ body{
 	}
 
 }
-.prev, .next{
+/*.prev, .next{
 	background: url(../img/sprite.png) no-repeat 0 0;
 	.sprite(0, 64px, 137px);
 	.backPos(0, -32px);
@@ -250,18 +261,15 @@ body{
 	.backPos(-64px, -32px);
 }
 .pagination{
-
+*/
 }
 .sprite(@radius: 0, @largeur: 32px, @hauteur: 32px){
 	width: @largeur;
 	height: @hauteur;
 	border-radius: @radius;
-	text-indent: -100000px;
+	text-indent: -100000px;                                                                                                  
 	overflow: hidden;
 }
 .backPos(@left: 0, @top: 0){
 	background-position: @left @top;
 }
-
-
-

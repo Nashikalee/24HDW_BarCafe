@@ -101,7 +101,7 @@ if (!jQuery.fn.dkJSUSlider) {
 
                 // Set Navigation
                 if (settings.showNavigation && settings.createNavigation) {
-                    this.navigation = jQuery('<div class="navigation"><div class="prev">prev</div><div class="next">next</div></div>');
+                    this.navigation = jQuery('<div class="navigation"><div class="prev"></div><div class="next"></div></div>');
                     this.wrapper.append(this.navigation);
                 }
 
