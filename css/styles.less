@@ -39,58 +39,60 @@ h1, h2, h3, h4, h5, h6{
 
 body{
 	font-family: helvetica, sans-serif;
-	margin-top: 70px;
-	nav{ // Menu
-		background: @beige;
-		width: 100%;
-		padding: 10px;
-		position: fixed;
-		top: 0; left: 0;
-		z-index: 99999;
-		text-align: center;
-		overflow: hidden;
-		font-family: "futura", sans-serif;
-		ul{
-			margin-left: 50px;
-			img{ // Logo
-				width: 50px;
-			}
-			li{
-				display: inline-block;
-				a{
-					padding: 0 20px;
-					color: @noir;
-					text-transform: uppercase;
-					.transition(.5s);
+	padding-top: 70px;
+	header{
+			background: @beige;
+			width: 100%;
+			padding: 10px;
+			position: fixed;
+			top: 0; left: 0;
+			z-index: 99999;
+			text-align: center;
+			overflow: hidden;
+			font-family: "futura", sans-serif;
+		nav{ // Menu
+			ul{
+				margin-left: 50px;
+				img{ // Logo
+					width: 50px;
 				}
 				li{
 					display: inline-block;
 					a{
 						padding: 0 20px;
-						text-transform: uppercase;
-						text-decoration: none;
 						color: @noir;
+						text-transform: uppercase;
 						.transition(.5s);
 					}
-					&:hover{
+					li{
+						display: inline-block;
 						a{
-							color: @violet;
+							padding: 0 20px;
+							text-transform: uppercase;
+							text-decoration: none;
+							color: @noir;
+							.transition(.5s);
+						}
+						&:hover{
+							a{
+								color: @violet;
+							}
+						}
+						&:nth-of-type(2), &:nth-of-type(5){
+							border-left: 1px solid @noir;
 						}
 					}
-					&:nth-of-type(2), &:nth-of-type(5){
-						border-left: 1px solid @noir;
-					}
-				}
-			} // End ul
-		} // End nav Menu
+				} // End ul
+			} // End nav Menu
+		}
 	}
 	section{
-		margin-top: 10%;
 		&#accueil{
 			article{
 				div{
 					figure{
 						img{
+							display: block;
 							width: 100%;
 						}
 						figcaption{
