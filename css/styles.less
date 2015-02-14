@@ -22,39 +22,41 @@ body, ul, a, h1, h2, h3, h4, h5, h6{
 	transition: @type @duree @effet;
 }
 body{
-	nav{ // Menu
-		background: @blanc;
-		width: 100%;
-		padding: 10px;
-		position: fixed;
-		top: 0; left: 0;
-		text-align: center;
-		overflow: hidden;
-		z-index: 9999;
-		ul{
-			margin-left: 50px;
-			img{ // Logo
-				width: 50px;
-			}
-			li{
-				display: inline-block;
-				a{
-					padding: 0 20px;
-					text-transform: uppercase;
-					color: @noir;
-					.transition(.5s);
+	header{
+		nav{ // Menu
+			background: @blanc;
+			width: 100%;
+			padding: 10px;
+			position: fixed;
+			top: 0; left: 0;
+			text-align: center;
+			overflow: hidden;
+			z-index: 9999;
+			ul{
+				margin-left: 50px;
+				img{ // Logo
+					width: 50px;
 				}
-				&:hover{
+				li{
+					display: inline-block;
 					a{
-						color: @violet;
+						padding: 0 20px;
+						text-transform: uppercase;
+						color: @noir;
+						.transition(.5s);
+					}
+					&:hover{
+						a{
+							color: @violet;
+						}
+					}
+					&:nth-of-type(2), &:nth-of-type(5){
+						border-left: 1px solid @noir;
 					}
 				}
-				&:nth-of-type(2), &:nth-of-type(5){
-					border-left: 1px solid @noir;
-				}
-			}
-		} // End ul
-	} // End nav Menu
+			} // End ul
+		} // End nav Menu
+	}
 	section{
 		&#accueil{
 			margin-top: 60px;
@@ -70,19 +72,12 @@ body{
 			}
 		} // End Accueil
 	} // End section
-	footer{
-		background: #333;
-	} // End Footer
-}
-// Trois items
-div{
-	background: #e2e7ed;
-	margin: 10px 0;
+
 	div{
-		div{
-			ul{
-				div{
-					li{
+		>div{
+			>ul{
+				>div{
+					>li{
 						img{
 							display:block;
 							margin: 0 auto;
@@ -96,6 +91,26 @@ div{
 				}
 			}
 		}
+
+		&#menus{
+			background: #e2e7ed;
+			padding: 50px 0;
+			>div{
+				h2{
+					margin-bottom: 30px;
+				}
+				>div{
+					>div{
+						img{
+							height: 200px;
+						}
+					}
+				}
+			}
+		}
 	}
-}	
+
+
+}
+
 

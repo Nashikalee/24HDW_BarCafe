@@ -18,13 +18,89 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
-<?php include("menu.php"); ?>
-<?php include("accueil.php"); ?>
-<?php include("nouveautes.php"); ?>
-<?php include("menus.php"); ?>
-<?php include("produits.php"); ?>
-<?php include("contact.php"); ?>
-<?php include("footer.php"); ?>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#accueil" class="scrollTo">Accueil</a></li><!--
+				--><li><a href="#menus" class="scrollTo">Menus</a></li><!--
+				--><li><a href="#accueil" class="scrollTo"><img src="img/logo.png" alt="logo" /></a></li><!--
+				--><li><a href="#produits" class="scrollTo">Produits</a></li><!--
+				--><li><a href="#contact" class="scrollTo">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="accueil">
+		<!-- <h1>Accueil</h1> -->
+		<article>
+			<div id="slider">
+				<ul id="content">
+
+				</ul>
+			</div>
+		</article>
+	</section>
+	
+	<div>
+		<div class="container">
+			<div class="row">
+				<ul>
+					<div class="col-md-4">
+						<li>
+							<img src="img/duck01.png" alt="">
+							<p>Lorem ipsum Aute elit velit voluptate quis irure et dolor in irure irure dolor eiusmod amet ut elit aute anim reprehenderit reprehenderit amet nostrud aliquip ut anim occaecat ut sed anim quis in ad occaecat sunt nisi ea consequat.</p>
+						</li>
+					</div>	
+					<div class="col-md-4">
+						<li>
+							<img src="img/duck01.png" alt="">
+							<p>Lorem ipsum Aliqua nisi reprehenderit nisi dolore labore fugiat ullamco Duis Duis dolore deserunt et dolor deserunt officia Duis sed esse sed quis amet amet non labore.</p>
+						</li>
+					</div>	
+					<div class="col-md-4">
+						<li>
+							<img src="img/duck01.png" alt="">
+							<p>Lorem ipsum Laboris eiusmod ut culpa laborum labore laboris anim ea consequat occaecat Excepteur magna anim ut dolor culpa est et mollit.</p>
+						</li>
+					</div>	
+				</ul>	
+			</div>
+		</div>
+	</div>
+	
+
+
+	<div id="menus">
+		<div class="container">
+			<h2>Les menus</h2>
+			<div class="row">
+				<div class="col-md-3">
+					<img src="img/duck02.jpg">
+				</div>
+				<div class="col-md-3">
+					<img src="img/duck02.jpg">
+				</div>
+				<div class="col-md-3">
+					<img src="img/duck02.jpg">
+				</div>
+				<div class="col-md-3">
+					<img src="img/duck02.jpg">
+				</div>
+				<div class="col-md-3">
+					<img src="img/duck02.jpg">
+				</div>
+				<div class="col-md-3">
+					<img src="img/duck02.jpg">
+				</div>
+				<div class="col-md-3">
+					<img src="img/duck02.jpg">
+				</div>
+				<div class="col-md-3">
+					<img src="img/duck02.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 </body>
 </html>
