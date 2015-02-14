@@ -23,6 +23,14 @@
 	<header>
 		<nav>
 			<ul>
+				<li>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		                <span class="sr-only">Toggle navigation</span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+	            	</button>
+	            </li>
 				<li><a href="#accueil" class="scrollTo">Accueil</a></li><!--
 				--><li><a href="#menus" class="scrollTo">Menus</a></li><!--
 				--><li><a href="#accueil" class="scrollTo"><img src="img/logo.png" alt="logo" /></a></li><!--
@@ -139,8 +147,10 @@
 		</div>
 	</div>
 	<div id="map">
-		<iframe width="100%" height="350" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/place?q=3+Rue+Chinard,+Vaise,+Lyon,+France&key=AIzaSyCDKcnD3IyParpo7iiBlPrFlXrTgFP6hQU" style="background-color:transparent"></iframe>
+		<div id="canvas1">
+			<iframe width="100%" height="350" frameborder="0" style="border:0"
+	src="https://www.google.com/maps/embed/v1/place?q=3+Rue+Chinard,+Vaise,+Lyon,+France&key=AIzaSyCDKcnD3IyParpo7iiBlPrFlXrTgFP6hQU" style="background-color:transparent"></iframe>
+		</div>
 	</div>
 
 	<footer>
@@ -152,7 +162,22 @@ src="https://www.google.com/maps/embed/v1/place?q=3+Rue+Chinard,+Vaise,+Lyon,+Fr
 		<p>© 2015 Minicaf'. All Rights Reserved.</p>
 	</footer>
 
-	<script>var map = new GMap2(document.getElementById("google_map"));
-map.disableScrollWheelZoom(); </script>
+	<script>
+    $(document).ready(function () {
+
+        // you want to enable the pointer events only on click;
+
+        $('#map_canvas1').addClass('scrolloff'); // set the pointer events to none on doc ready
+        $('#canvas1').on('click', function () {
+            $('#map_canvas1').removeClass('scrolloff'); // set the pointer events true on click
+        });
+
+        // you want to disable pointer events when the mouse leave the canvas area;
+
+        $("#map_canvas1").mouseleave(function () {
+            $('#map_canvas1').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
+        });
+    });
+</script>
 </body>
 </html>
