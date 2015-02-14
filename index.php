@@ -43,9 +43,9 @@
 					</figcaption>
 				</figure>
 				<figure><img src="img/cafe.jpg"></figure>
-				<figure><img src="img/exotique2.jpg"></figure>
+				<figure><img src="img/exotique.jpg"></figure>
 				<figure><img src="img/boutique_avant.jpg"></figure>
-				<figure><img src="img/int2.jpg"></figure>
+				<figure><img src="img/int.jpg"></figure>
 			</div>
 		</article>
 	</section>
