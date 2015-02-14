@@ -23,6 +23,17 @@ body, ul, a, h1, h2, h3, h4, h5, h6{
 	-o-transition: @type @duree @effet;
 	transition: @type @duree @effet;
 }
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto.ttf');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.dfont');
+}
+
 body{
 	header{
 		nav{ // Menu
@@ -106,8 +117,10 @@ body{
 				}
 				>div{
 					>div{
+						padding: 0;
 						img{
-							height: 200px;
+							max-width: 100%;
+							height: auto;
 						}
 					}
 				}
@@ -149,7 +162,7 @@ body{
 	footer{
 		background: @bleu;
 		text-align: center;
-		padding: 30px 0px;
+		padding: 30px 0px 0px;
 		ul{
 			display: block;
 			margin: 0 auto;

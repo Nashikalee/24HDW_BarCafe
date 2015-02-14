@@ -74,28 +74,30 @@
 			<h2>Les menus</h2>
 			<div class="row">
 				<div class="col-md-3">
-					<img src="img/duck02.jpg">
+					<img src="img/menu1.jpg">
 				</div>
 				<div class="col-md-3">
-					<img src="img/duck02.jpg">
+					<img src="img/menu2.jpg">
 				</div>
 				<div class="col-md-3">
-					<img src="img/duck02.jpg">
+					<img src="img/menu3.jpg">
 				</div>
 				<div class="col-md-3">
-					<img src="img/duck02.jpg">
+					<img src="img/menu4.jpg">
+				</div>
+			</div>
+			<div class="row">	
+				<div class="col-md-3">
+					<img src="img/menu5.jpg">
 				</div>
 				<div class="col-md-3">
-					<img src="img/duck02.jpg">
+					<img src="img/menu6.jpg">
 				</div>
 				<div class="col-md-3">
-					<img src="img/duck02.jpg">
+					<img src="img/menu7.jpg">
 				</div>
 				<div class="col-md-3">
-					<img src="img/duck02.jpg">
-				</div>
-				<div class="col-md-3">
-					<img src="img/duck02.jpg">
+					<img src="img/menu8.jpg">
 				</div>
 			</div>
 		</div>
