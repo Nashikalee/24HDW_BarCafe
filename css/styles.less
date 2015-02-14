@@ -27,6 +27,15 @@ h1, h2, h3, h4, h5, h6{
 	transition: @type @duree @effet;
 }
 
+.transform(@scale: 1.2){
+	transform: scale(@scale);
+	-webkit-transition: scale(@scale);
+	-moz-transition: scale(@scale);
+	-ms-transition: scale(@scale);
+	-o-transition: scale(@scale);
+
+}
+
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto.ttf');
@@ -160,9 +169,16 @@ body{
 				>div{
 					>div{
 						padding: 0;
+						overflow: hidden;
 						img{
 							max-width: 100%;
 							height: auto;
+							.transition;
+						}
+						&:hover{
+							img{
+								.transform;
+							}
 						}
 					}
 				}
