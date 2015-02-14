@@ -8,14 +8,16 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/dk-jsu-slider.css">
 	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
 	<link rel="icon" href="img/" type="image/x-icon" />
 
 	<title>Minicaf'</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	<script src="js/vendor/less-1.5.0.min.js"></script>
 	<script src="js/main.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/dk-jsu-slider.js"></script>
 </head>
 <body>
 	<header>
@@ -30,15 +32,24 @@
 		</nav>
 	</header>
 	<section id="accueil">
-		<!-- <h1>Accueil</h1> -->
 		<article>
-			<div id="slider">
-				<ul id="content">
-
-				</ul>
+			<div id="target-slider">
+				<figure>
+					<img src="img/pub2.jpg">
+					<figcaption>
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</figcaption>
+				</figure>
+				<figure><img src="img/cafe.jpg"></figure>
+				<figure><img src="img/exotique2.jpg"></figure>
+				<figure><img src="img/ext2.jpg"></figure>
+				<figure><img src="img/int2.jpg"></figure>
 			</div>
 		</article>
 	</section>
+
 	
 	<div>
 		<div class="container">

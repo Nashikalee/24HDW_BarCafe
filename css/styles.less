@@ -5,6 +5,9 @@ body, ul, a, h1, h2, h3, h4, h5, h6{
 	padding: 0;
 	margin: 0;
 }
+h1, h2, h3, h4, h5, h6{
+	font-family: "roboto", sans-serif;
+}
 // Constantes //
 @blanc: #fff;
 @beige: #F2F2F2;
@@ -35,20 +38,30 @@ body, ul, a, h1, h2, h3, h4, h5, h6{
 }
 
 body{
-	header{
-		nav{ // Menu
-			background: @blanc;
-			width: 100%;
-			padding: 10px;
-			position: fixed;
-			top: 0; left: 0;
-			text-align: center;
-			overflow: hidden;
-			z-index: 9999;
-			ul{
-				margin-left: 50px;
-				img{ // Logo
-					width: 50px;
+	font-family: helvetica, sans-serif;
+	margin-top: 70px;
+	nav{ // Menu
+		background: @beige;
+		width: 100%;
+		padding: 10px;
+		position: fixed;
+		top: 0; left: 0;
+		z-index: 99999;
+		text-align: center;
+		overflow: hidden;
+		font-family: "futura", sans-serif;
+		ul{
+			margin-left: 50px;
+			img{ // Logo
+				width: 50px;
+			}
+			li{
+				display: inline-block;
+				a{
+					padding: 0 20px;
+					color: @noir;
+					text-transform: uppercase;
+					.transition(.5s);
 				}
 				li{
 					display: inline-block;
@@ -74,18 +87,26 @@ body{
 	section{
 		margin-top: 10%;
 		&#accueil{
-			margin-top: 60px;
-			ul{
-				li{
-					display: inline;
-					img{
-						width: 100%;
-						height: 200px;
-
+			article{
+				div{
+					figure{
+						img{
+							width: 100%;
+						}
+						figcaption{
+							width: 50%;
+							color: @blanc;
+							position: absolute;
+							top: 2%; left: 40%;
+							h3{
+							}
+							p{
+							}
+						}
 					}
 				}
 			}
-		} // End Accueil
+		}
 	} // End section
 
 	div{
@@ -182,5 +203,25 @@ body{
 	}
 
 }
+.prev, .next{
+	background: url(../img/sprite.png) no-repeat 0 0;
+	.sprite(0, 64px, 137px);
+	.backPos(0, -32px);
+}
+.next{
+	.backPos(-64px, -32px);
+}
+.pagination{
 
+}
+.sprite(@radius: 0, @largeur: 32px, @hauteur: 32px){
+	width: @largeur;
+	height: @hauteur;
+	border-radius: @radius;
+	text-indent: -100000px;
+	overflow: hidden;
+}
+.backPos(@left: 0, @top: 0){
+	background-position: @left @top;
+}
 
