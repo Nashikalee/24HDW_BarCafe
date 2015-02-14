@@ -18,19 +18,12 @@
 	<script src="js/vendor/less-1.5.0.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/dk-jsu-slider.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 </head>
 <body>
-	<header>
 		<nav>
 			<ul>
-				<li>
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		                <span class="sr-only">Toggle navigation</span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-	            	</button>
-	            </li>
 				<li><a href="#accueil" class="scrollTo">Accueil</a></li><!--
 				--><li><a href="#menus" class="scrollTo">Menus</a></li><!--
 				--><li><a href="#accueil" class="scrollTo"><img src="img/logo.png" alt="logo" /></a></li><!--
@@ -38,7 +31,7 @@
 				--><li><a href="#contact" class="scrollTo">Contact</a></li>
 			</ul>
 		</nav>
-	</header>
+
 	<section id="accueil">
 		<article>
 			<div id="target-slider">
@@ -46,9 +39,8 @@
 					<img src="img/pub2.jpg">
 					<div class="ecran">
 						<figcaption>
-							<h3>Lorem ipsum dolor sit amet</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h3>Café & Gourmandise tout simplement</h3>
+							<p>Nouveau menu : L'Exostime...</p>
 						</figcaption>
 					</div>
 				</figure>
@@ -68,19 +60,20 @@
 					<div class="col-md-4">
 						<li>
 							<img src="img/1.png" alt="">
-							<p>Lorem ipsum Aute elit velit voluptate quis irure et dolor in irure irure dolor eiusmod amet ut elit aute anim reprehenderit reprehenderit amet nostrud aliquip ut anim occaecat ut sed anim quis in ad occaecat sunt nisi ea consequat.</p>
+							<p>La nouveauté 2015, un menu spécialement exotique, vous y trouverez des ingrédients qui vous ferons rêver : fruit de la passion, kiwi, papaye …
+							</p>
 						</li>
 					</div>	
 					<div class="col-md-4">
 						<li>
 							<img src="img/2.png" alt="">
-							<p>Lorem ipsum Aliqua nisi reprehenderit nisi dolore labore fugiat ullamco Duis Duis dolore deserunt et dolor deserunt officia Duis sed esse sed quis amet amet non labore.</p>
+							<p>Où boire un café en dégustant de nouvelles saveurs ? Le Minicaf’ sera vous satisfaire !  Localisé à Lyon, vous serez envouté par l’odeur d’un café bio et goûtu.</p>
 						</li>
 					</div>	
 					<div class="col-md-4">
 						<li>
 							<img src="img/3.png" alt="">
-							<p>Lorem ipsum Laboris eiusmod ut culpa laborum labore laboris anim ea consequat occaecat Excepteur magna anim ut dolor culpa est et mollit.</p>
+							<p>Rejoignez-nous si vous désirez afin de créer vos propres menus. Nous vous laissons les reines pour plus de liberté. N’hésitez pas à passer par les réseaux sociaux, nous y sommes !</p>
 						</li>
 					</div>	
 				</ul>	
@@ -88,7 +81,6 @@
 		</div>
 	</div>
 	
-
 
 	<div id="menus">
 		<div class="container">
@@ -163,21 +155,11 @@
 	</footer>
 
 	<script>
-    $(document).ready(function () {
-
-        // you want to enable the pointer events only on click;
-
-        $('#map_canvas1').addClass('scrolloff'); // set the pointer events to none on doc ready
-        $('#canvas1').on('click', function () {
-            $('#map_canvas1').removeClass('scrolloff'); // set the pointer events true on click
-        });
-
-        // you want to disable pointer events when the mouse leave the canvas area;
-
-        $("#map_canvas1").mouseleave(function () {
-            $('#map_canvas1').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
-        });
-    });
+$(document).ready(function () {
+			  $(".navbar-toggle").on("click", function () {
+				    $(this).toggleClass("active");
+			  });
+		});
 </script>
 </body>
 </html>
