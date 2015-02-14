@@ -132,7 +132,7 @@
 				<p>Martial Martin</p>
 				<p>06 12 34 56 78</p>
 				<p>minicaf@gmail.com</p>
-				<p>5, rue de Vaise 69000 LYON</p>
+				<p>5, rue de Chinard 69000 LYON</p>
 			</div>
 		</div>
 	</div>
