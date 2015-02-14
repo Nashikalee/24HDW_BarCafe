@@ -47,7 +47,6 @@
 
 .dk-jsu-slider-wrapper {
 	width: 100%;
-	height: 400px;
 }
 
 .dk-jsu-slider {
@@ -62,10 +61,7 @@
 
 .dk-jsu-slider-wrapper .navigation .prev,
 .dk-jsu-slider-wrapper .navigation .next {
-	top: 50%;
 	left: 25%;
-	/*height: 16px;*/
-	margin-top: -8px;
 	font-size: 12px;
 	cursor: pointer;
 	z-index: 100;

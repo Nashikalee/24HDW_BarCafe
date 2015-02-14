@@ -5,6 +5,9 @@ body, ul, a, h1, h2, h3, h4, h5, h6{
 	padding: 0;
 	margin: 0;
 }
+h1, h2, h3, h4, h5, h6{
+	font-family: "roboto", sans-serif;
+}
 // Constantes //
 @blanc: #fff;
 @beige: #F2F2F2;
@@ -23,6 +26,7 @@ body, ul, a, h1, h2, h3, h4, h5, h6{
 	transition: @type @duree @effet;
 }
 body{
+	font-family: helvetica, sans-serif;
 	margin-top: 70px;
 	nav{ // Menu
 		background: @beige;
@@ -33,6 +37,7 @@ body{
 		z-index: 99999;
 		text-align: center;
 		overflow: hidden;
+		font-family: "futura", sans-serif;
 		ul{
 			margin-left: 50px;
 			img{ // Logo
@@ -63,14 +68,16 @@ body{
 				div{
 					figure{
 						img{
-							width: auto;
+							width: 100%;
 						}
 						figcaption{
 							width: 50%;
+							color: @blanc;
 							position: absolute;
-							top: 5%; left: 45%;
+							top: 2%; left: 40%;
 							h3{
-								color: @blanc;
+							}
+							p{
 							}
 						}
 					}
