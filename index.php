@@ -46,19 +46,19 @@
 				<ul>
 					<div class="col-md-4">
 						<li>
-							<img src="img/duck01.png" alt="">
+							<img src="img/1.png" alt="">
 							<p>Lorem ipsum Aute elit velit voluptate quis irure et dolor in irure irure dolor eiusmod amet ut elit aute anim reprehenderit reprehenderit amet nostrud aliquip ut anim occaecat ut sed anim quis in ad occaecat sunt nisi ea consequat.</p>
 						</li>
 					</div>	
 					<div class="col-md-4">
 						<li>
-							<img src="img/duck01.png" alt="">
+							<img src="img/2.png" alt="">
 							<p>Lorem ipsum Aliqua nisi reprehenderit nisi dolore labore fugiat ullamco Duis Duis dolore deserunt et dolor deserunt officia Duis sed esse sed quis amet amet non labore.</p>
 						</li>
 					</div>	
 					<div class="col-md-4">
 						<li>
-							<img src="img/duck01.png" alt="">
+							<img src="img/3.png" alt="">
 							<p>Lorem ipsum Laboris eiusmod ut culpa laborum labore laboris anim ea consequat occaecat Excepteur magna anim ut dolor culpa est et mollit.</p>
 						</li>
 					</div>	
@@ -104,14 +104,16 @@
 	<div id="contact">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5">
-					<input type="text" placeholder="Nom">
-					<input type="text" placeholder="Adresse email">
-				</div>
-				<div class="col-md-12">
-					<textarea placeholder="Contactez nous"></textarea>
-					<input type="submit">
-				</div>
+				<form>
+					<div class="col-md-5">
+						<input type="text" placeholder="Nom">
+						<input type="text" placeholder="Adresse email">
+					</div>
+					<div class="col-md-12">
+						<textarea placeholder="Contactez nous"></textarea>
+						<input type="submit">
+					</div>
+				</form>
 			</div>
 			<div class="row">
 				<p>Martial Martin</p>
@@ -122,9 +124,18 @@
 		</div>
 	</div>
 	<div id="map">
-		<iframe width="100%" height="450" frameborder="0" style="border:0"
+		<iframe width="100%" height="350" frameborder="0" style="border:0"
 src="https://www.google.com/maps/embed/v1/place?q=3+Rue+Chinard,+Vaise,+Lyon,+France&key=AIzaSyCDKcnD3IyParpo7iiBlPrFlXrTgFP6hQU"></iframe>
 	</div>
+
+	<footer>
+		<ul>
+			<li><a href="http://facebook.com"><img src="img/facebook.png" alt=""></a></li>
+			<li><a href="http://plus.google.com"><img src="img/google.png" alt=""></a></li>
+			<li><a href="http://twitter.com"><img src="img/twitter.png" alt=""></a></li>
+		</ul>
+		<p>© 2015 Minicaf'. All Rights Reserved.</p>
+	</footer>
 
 </body>
 </html>
